@@ -74,7 +74,7 @@ public abstract class FirestoreAdapter<VH extends RecyclerView.ViewHolder>
                  onDataChanged();
              }
 
-             // Add these three methods from Step 7 of the codelab
+             // Add these three methods from Step 7 of the codelabs
              protected void onDocumentAdded(DocumentChange change) {
                  mSnapshots.add(change.getNewIndex(), change.getDocument());
                  notifyItemInserted(change.getNewIndex());
